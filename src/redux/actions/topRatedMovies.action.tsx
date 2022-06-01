@@ -15,7 +15,6 @@ export const requestTopRatedMovies =
         data,
       });
     } catch (err) {
-      // error
       dispatch({
         type: REQUEST_TOP_RATED_MOVIES_FAILED,
         error: JSON.stringify(err),

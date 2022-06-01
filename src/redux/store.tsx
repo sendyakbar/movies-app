@@ -9,10 +9,12 @@ if (process.env?.NODE_ENV === 'development') {
 }
 
 import topRatedMovies from './reducers/topRatedMovies.reducer';
+import topRatedTVShow from './reducers/topRatedTVShow.reducer';
 
 const appReducers = combineReducers({
   // add reducers here
   topRatedMovies,
+  topRatedTVShow,
 });
 
 const store = createStore(appReducers, applyMiddleware(...middleware));

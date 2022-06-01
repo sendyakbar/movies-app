@@ -23,12 +23,17 @@ export default function ItemCard(props: ItemCardPropTypes) {
       />
       <View style={styles.infoCol}>
         <Text numberOfLines={2} style={styles.titleText}>
-          {item.title}
+          {item.name || item.title}
         </Text>
         <Text style={styles.overviewText} numberOfLines={4}>
           {item.overview}
         </Text>
         <View style={styles.ratingContainer}>
+          {!!item.first_air_date && (
+            <Text style={styles.dateText}>
+              {formatDate(item.first_air_date)}
+            </Text>
+          )}
           {!!item.release_date && (
             <Text style={styles.dateText}>{formatDate(item.release_date)}</Text>
           )}
