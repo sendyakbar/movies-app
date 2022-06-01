@@ -3,11 +3,11 @@ import {Image} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import TopRatedNavigation from './TopRated/TopRated.navigation';
-import UpcomingMovies from '../screens/UpcomingMovies/UpcomingMovies.screen';
-import NowPlayingMovies from '../screens/NowPlayingMovies/NowPlayingMovies.screen';
 import PopularNavigation from './Popular/Popular.navigation';
 import {themes} from '../themes/themes';
 import {images} from '../themes/images';
+import UpcomingNavigation from './Upcoming/Upcoming.navigation';
+import NowPlayingNavigation from './NowPlaying/NowPlaying.navigation';
 
 const Tab = createBottomTabNavigator();
 
@@ -34,8 +34,8 @@ export default function RootNavigator() {
         }}
       />
       <Tab.Screen
-        name="UpcomingMoviesScreen"
-        component={UpcomingMovies}
+        name="UpcomingNavigation"
+        component={UpcomingNavigation}
         options={{
           title: 'Upcoming',
           tabBarIcon: ({focused}) => (
@@ -47,8 +47,8 @@ export default function RootNavigator() {
         }}
       />
       <Tab.Screen
-        name="NowPlayingScreen"
-        component={NowPlayingMovies}
+        name="NowPlayingNavigation"
+        component={NowPlayingNavigation}
         options={{
           title: 'Now Playing',
           tabBarIcon: ({focused}) => (

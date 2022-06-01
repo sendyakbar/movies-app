@@ -37,7 +37,7 @@ export default function ItemCard(props: ItemCardPropTypes) {
           {!!item.release_date && (
             <Text style={styles.dateText}>{formatDate(item.release_date)}</Text>
           )}
-          {item.vote_average && (
+          {!!item.vote_average && (
             <View style={styles.ratingBox}>
               <Text style={styles.voteText}>{item.vote_average}</Text>
             </View>
