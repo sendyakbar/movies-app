@@ -10,7 +10,7 @@ import {styles} from './NowPlayingMovies.style';
 export default function NowPlayingMovies() {
   const dispatch: any = useDispatch();
   const {loading, data} = useSelector(
-    (state: any) => state.upcomingMovies,
+    (state: any) => state.nowPlayingMovies,
     shallowEqual,
   );
 
