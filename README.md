@@ -8,41 +8,34 @@
 
 ## How to run
 
+Run on android device/emulator with dev environment:
 ```
 yarn android ENV=dev
 ```
 
-Run on android device/emulator with dev environment
-
+Run on device/emulator with prod environment:
 ```
 yarn android ENV=prod
 ```
 
-Run on device/emulator with prod environment
-
+Run on ios emulator with dev environment:
 ```
 yarn ios ENV=dev
 ```
 
-Run on ios emulator with dev environment
-
+Run on ios emulator with prod environment:
 ```
 yarn ios ENV=prod
 ```
 
-Run on ios emulator with prod environment
-
-
 ## How to build
 
+Build apk with dev environment:
 ```
 yarn android:apk ENV=dev
 ```
 
-Build apk with dev environment
-
+Build apk with prod environment:
 ```
 yarn android:apk ENV=prod
 ```
-
-Build apk with prod environment
