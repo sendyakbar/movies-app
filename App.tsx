@@ -2,7 +2,7 @@ import React from 'react';
 import {SafeAreaView, StatusBar} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {Provider} from 'react-redux';
-import RNBootSplash from 'react-native-bootsplash'
+import RNBootSplash from 'react-native-bootsplash';
 
 import {styles} from './App.style';
 import RootNavigator from './src/navigation/RootNavigation';
