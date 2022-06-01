@@ -7,6 +7,7 @@ import RNBootSplash from 'react-native-bootsplash';
 import {styles} from './App.style';
 import RootNavigator from './src/navigation/RootNavigation';
 import store from './src/redux/store';
+import {themes} from './src/themes/themes';
 
 export default function App() {
   const onReady = () => {
@@ -16,7 +17,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <SafeAreaView style={styles.container}>
-        <StatusBar />
+        <StatusBar backgroundColor={themes.colors.DARK_BLUE} />
         <NavigationContainer onReady={onReady}>
           <RootNavigator />
         </NavigationContainer>

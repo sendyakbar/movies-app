@@ -5,6 +5,9 @@ export const themes = {
     LIGHT_GREEN: 'rgba(144, 206, 161, 1)',
     WHITE: 'rgba(255, 255, 255, 1)',
     LIGHT_GREY: '#949494',
+    BLACK: 'rgba(0, 0, 0, 1)',
+    GREEN: '#4D934D',
+    GREY: '#7F7D7C',
   },
   fontSize: {
     TITLE_1: 28,
